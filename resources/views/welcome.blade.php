@@ -63,6 +63,8 @@ https://templatemo.com/tm-558-klassy-cafe
                             <li class="scroll-to-section"><a href="#chefs">Guru</a></li>
 
                             <li class="scroll-to-section"><a href="#daftar">Daftar</a></li>
+
+                            <li class="scroll-to-section"><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>

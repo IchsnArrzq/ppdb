@@ -21,3 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('daftar', 'PendaftaranController@store')->name('store');
+Route::get('/siswa/edit/{id}', 'HomeController@edit')->name('siswa.edit');
+Route::get('/siswa/delete/{id}', 'HomeController@delete')->name('siswa.delete');
+Route::put('/siswa/update', 'HomeController@update')->name('siswa.update');
