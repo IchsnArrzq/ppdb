@@ -19,14 +19,11 @@
                                 <th>tempat_lahir</th>
                                 <th>tanggal_lahir</th>
                                 <th>alamat</th>
-                                <th>asal_sekolah</th>
-                                <th>kelas</th>
-                                <th>jurusan</th>
-                                <th colspan="2">Option</th>
+                                <th colspan="3">Option</th>
                             </tr>
                             @foreach($siswa as $data)
                             <tr>
-                            <th>nisn</th>
+                                <th>{{ $data->nisn }}</th>
                                 <td>{{ $data->nama }}</td>
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->nomor_telepon }}</td>
@@ -34,9 +31,7 @@
                                 <td>{{ $data->tempat_lahir }}</td>
                                 <td>{{ $data->tanggal_lahir }}</td>
                                 <td>{{ $data->alamat }}</td>
-                                <td>{{ $data->asal_sekolah }}</td>
-                                <td>{{ $data->kelas }}</td>
-                                <td>{{ $data->jurusan }}</td>
+                                <td><a href="{{ route('siswa.pdf',$data->id) }}" class="btn btn-info">Pdf</a></td>
                                 <td><a href="{{ route('siswa.edit',$data->id) }}" class="btn btn-warning">Edit</a></td>
                                 <td><a href="{{ route('siswa.delete',$data->id) }}" class="btn btn-danger">Delete</a></td>
                             </tr>

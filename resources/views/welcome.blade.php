@@ -349,7 +349,12 @@ https://templatemo.com/tm-558-klassy-cafe
                                         <textarea name="alamat" rows="6" id="alamat" placeholder="Alamat" required=""></textarea>
                                     </fieldset>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <button class="main-button-icon">Clear</button>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
                                     <fieldset>
                                         <button type="submit" id="form-submit" class="main-button-icon">Daftar</button>
                                     </fieldset>

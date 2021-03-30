@@ -48,4 +48,10 @@ class HomeController extends Controller
         $asd = Siswa::where('nama',$request->nama)->update($data);
         return back();
     }
+    public function pdf($id)
+    {
+        $siswa = Siswa::findOrFail($id);
+        $pdf = \PDF::loadview('pendaftaran-pdf',['siswa'=>$siswa]);
+    	return $pdf->stream('pendaftaran-pdf');
+    }
 }
